@@ -30,12 +30,13 @@ jobs:
       enabled: true
     working_directory: ~/repo
     steps:
-      - run: Deploy to shared server
-        command: |
-          sudo apt-get update
-          sudo apt-get -qq install git-ftp
-          echo "Deploying project ..."
-          git ftp push --insecure --user "${FTP_USERNAME}" --passwd "${FTP_PASSWORD}" "${FTP_HOST}" --all --syncroot ./dist
+      - run: 
+          name: Deploy to shared server
+          command: |
+            sudo apt-get update
+            sudo apt-get -qq install git-ftp
+            echo "Deploying project ..."
+            git ftp push --insecure --user "${FTP_USERNAME}" --passwd "${FTP_PASSWORD}" "${FTP_HOST}" --all --syncroot ./dist
 
 
 workflows:
