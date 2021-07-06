@@ -1,8 +1,5 @@
 # infoet
 
-# TODO:
-* cambiare la foto con una mia nella pagina chi siamo
-
 # Colors
 Curious Blue: #1690D3
 Bleached Cedar: #241C2C

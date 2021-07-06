@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app class="no-overflow" dark>
     <div>
       <v-img
         src="/error.svg"
@@ -57,5 +57,8 @@ h1 {
 }
 .theme--dark.v-application {
   background: transparent;
+}
+.no-overflow {
+  overflow: hidden;
 }
 </style>

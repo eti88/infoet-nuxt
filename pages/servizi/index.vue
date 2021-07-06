@@ -7,7 +7,7 @@
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
           <h3 class="mt-10 mb-5 text-h4">Servizi</h3>
-          <p class="text--secondary">
+          <p class="text--secondary text-h4">
             Ogni giorno ci impegniamo ad offrire <b>servizi professionali per i nostri clienti.</b>
           </p>
         </v-sheet>

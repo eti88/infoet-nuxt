@@ -1,7 +1,7 @@
 <template>
   <div class="d-flex flex-column justify-center align-center">
     <h6 class="text-h6">{{ name }}</h6>
-    <v-avatar size="110" class="my-4">
+    <v-avatar size="140" class="my-4">
       <v-img
         :src="img"
         :alt="name"

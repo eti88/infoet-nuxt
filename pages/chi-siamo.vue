@@ -36,7 +36,7 @@
     <v-row justify="space-around" class="mb-10">
       <team-avatar
         name="Etienne Tomaselli"
-        img="https://cdn.vuetifyjs.com/images/john.jpg"
+        img="/etienne.jpg"
         description="Fondatore e Responsabile Sviluppo Software"
         born-year="1988"
         born-month="12"

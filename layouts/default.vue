@@ -37,5 +37,6 @@ export default {
 <style>
 .page-background {
   background-image: linear-gradient(to left bottom, #0f6594, #2c507a, #323d5f, #2e2b44, #241c2c) !important;
+  overflow: hidden
 }
 </style>

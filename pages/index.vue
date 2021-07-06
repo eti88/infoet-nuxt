@@ -25,7 +25,7 @@
     </v-row>
     <v-row align="center">
       <v-col cols="12" sm="8">
-        <h3 class="mt-10 text-h4">I nostri servizi</h3>
+        <h3 class="mt-10 mb-5 text-h4">I nostri servizi</h3>
         <p class="text--secondary">
           Forniamo un'ampia gamma di servizi professionali nell'ambito dei software. Il nostro team è in grado di poter affrontare qualsiasi progetto IT.
         </p>
@@ -38,7 +38,7 @@
     </v-row>
     <v-row align="center">
       <v-col cols="12" sm="8">
-        <h3 class="mt-10 text-h4">Alcuni dei nostri lavori</h3>
+        <h3 class="mt-10 mb-5 text-h4">Alcuni dei nostri lavori</h3>
         <p class="text--secondary">
           Negli anni abbiamo sviluppato una gamma di progetti molto ampia e variegata. I nostri servizi di <b>sviluppo software</b> e <b>IT consulting</b> all'attivo
           sono stati realizzati in contesti multisettoriali. Qui puoi trvarne alcuni.

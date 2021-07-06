@@ -98,5 +98,8 @@ export default {
   .desc-wrapper
     height: 100px
     overflow: hidden
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%)
+    text-overflow: ellipsis
 
 </style>
