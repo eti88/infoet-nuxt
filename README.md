@@ -1,9 +1,7 @@
 # infoet
 
 # TODO:
-* Modificare la frase primaria perché non mi piace molto
 * cambiare la foto con una mia nella pagina chi siamo
-* https://pwa.nuxtjs.org/
 
 # Colors
 Curious Blue: #1690D3

@@ -14,17 +14,17 @@
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
           <p class="text--secondary">
-            Il nostro obbiettivo è aiutare le piccole e medie imprese a migliorare e
+            Il nostro obiettivo è aiutare le piccole e medie imprese a migliorare e
             progredire nel loro lavoro sviluppando software all'avanguardia.
           </p>
           <p class="text--secondary">
             La storia della Info<b>et</b> inizia nel 2018 quando il titolare
             Etienne, appassionato di software e tecnologie informatiche fonda l'azienda.<br />
             Negli anni l'azienda ha superato innumerevoli sfide, sviluppando un
-            know-how che ci peremtte di realizzare qualsiasi tipo di applicazione, su
+            know-how che ci permette di realizzare qualsiasi tipo di applicazione, su
             ogni tipo di piattaforma e dispositivo.<br />
             In un mercato che offre molte soluzioni pre-made e personalizzabili, la info<b>et</b>
-            si distirngue sviluppando prodotti personalizzati di elevata qualità e usabilità nonchè
+            si distingue sviluppando prodotti personalizzati di elevata qualità e usabilità nonchè
             per il supporto tecnico e passione costante nel tempo.
           </p>
         </v-sheet>
@@ -38,6 +38,8 @@
         name="Etienne Tomaselli"
         img="https://cdn.vuetifyjs.com/images/john.jpg"
         description="Fondatore e Responsabile Sviluppo Software"
+        born-year="1988"
+        born-month="12"
       />
     </v-row>
     <v-row>
@@ -70,13 +72,13 @@
         <v-sheet color="transparent" class="pa-5">
           <p class="text--secondary">
             Le nostre soluzioni software sono frutto di una costante ricerca
-            e studio da parte del nostro team in modo da potrevi offrire sempre
+            e studio da parte del nostro team in modo da potervi offrire sempre
             prodotti moderni e stabili.<br />
             La programmazione è svolta con le tecniche OOP (Object Oriented Programming)
             per assicurare le migliori prestazioni e continuità del codice nel tempo.
             Applichiamo la metodologia <a href="https://it.wikipedia.org/wiki/Rapid_application_development">RAD</a>
             per la riduzione dei tempi di sviluppo.<br />
-            Utilizziamo tecnologie <b>Open Source</b> per i nostri prodottiin modo da consegnare
+            Utilizziamo tecnologie <b>Open Source</b> per i nostri prodotti in modo da consegnare
             prodotti ad alto valore aggiunto (<i>rispetto degli standard, sicurezza, qualità e longevità</i>)
             con investimenti contenuti.
           </p>
@@ -164,7 +166,7 @@
           per una solida presenza sul mercato.
           Abbiamo le persone, le competenze, le intuizioni e l'esperienza in più settori,
           tali da modellare nuove forme di valore per il cliente.<br />
-          Offriamo punti di vista altamente obbiettivi con particolare attenzione al business,
+          Offriamo punti di vista altamente obiettivi con particolare attenzione al business,
           alla tecnologia e all'analisi, sfruttando la nostra profonda esperienza.
         </p>
       </v-sheet>

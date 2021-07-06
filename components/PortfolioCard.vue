@@ -10,7 +10,7 @@
     <v-card-title class="px-5 px-md-8" primary-title>
       <h3 class="text-h6 mb-0">{{ title }}</h3>
     </v-card-title>
-    <v-chip-group class="mx-5 mx-md-8">
+    <v-chip-group class="mx-5 mx-md-8" show-arrows>
       <v-chip
         v-for="(tag, k) in tags"
         :key="k"

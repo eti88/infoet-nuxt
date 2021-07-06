@@ -2,3 +2,24 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Sintony:wght@400;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+$body-font-family: 'Sintony', sans-serif !default;
+$heading-font-family: 'Source Sans Pro', sans-serif !default;
+
+$headings: (
+  'h1': (
+    'font-family': $heading-font-family
+  ),
+  'h2': (
+    'font-family': $heading-font-family
+  )
+);
+
+$snackbar-action-margin: 0px !important;
+$snackbar-content-padding: 0px !important;
+$alert-margin: 0px !important;
+
+
+@import '~vuetify/src/styles/styles.sass';

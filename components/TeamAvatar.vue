@@ -10,6 +10,9 @@
     <p class="text-body-1 font-weight-light max-w-220">
       {{ description }}
     </p>
+    <div v-if="getAge > 0" class="mt-n4 text-body-2 font-weight-light text-center max-w-220">
+     Età {{ getAge }}
+    </div>
   </div>
 </template>
 
@@ -27,6 +30,31 @@ export default {
     description: {
       type: String,
       required: true
+    },
+    bornYear: {
+      type: Number,
+      required: false
+    },
+    bornMonth: {
+      type: Number,
+      required: false
+    }
+  },
+  computed: {
+    getAge () {
+      if (this.bornYear === null) {
+        return 0
+      } else if (this.bornMonth === null) {
+        return 0
+      }
+      const today = new Date()
+      const birthDate = new Date(this.bornYear, this.bornMonth, 1)
+      let age = today.getFullYear() - birthDate.getFullYear()
+      const m = today.getMonth() - birthDate.getMonth()
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--
+      }
+      return age
     }
   }
 }

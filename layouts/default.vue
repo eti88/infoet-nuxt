@@ -11,6 +11,9 @@
         <Nuxt />
       </v-main>
 
+      <client-only>
+        <cookie-banner />
+      </client-only>
     </v-container>
     <v-container>
       <v-row justify="center">
@@ -23,10 +26,11 @@
 </template>
 
 <script>
+import CookieBanner from '~/components/CookieBanner.vue'
 import Footer from '~/components/Footer.vue'
 import Navbar from '~/components/Navbar.vue'
 export default {
-  components: { Navbar, 'e-footer': Footer }
+  components: { Navbar, 'e-footer': Footer, CookieBanner }
 }
 </script>
 

@@ -11,10 +11,10 @@
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
           <p class="text--secondary">
-            Ideazione, progettazione e ralizzazione di App Mobile iOS e Android per Smartphone.
+            Ideazione, progettazione e realizzazione di App Mobile iOS e Android per Smartphone.
             Il nostro approccio è quello di sviluppare tramite il framework flutter con eventuali
             integrazioni specifiche per ogni piattaforma.
-            Ogni nostro progetto comincia individuando gli obbiettivie requisiti necessari per l'app
+            Ogni nostro progetto comincia individuando gli obiettivi e requisiti necessari per l'app
             requisito fondamentale per sviluppare prodotti brillanti per tutti i dispositivi.
           </p>
         </v-sheet>
@@ -32,7 +32,7 @@
           <h5 class="text-h6">Il cambiamento del mercato</h5>
           <p class="text--secondary">
             Le App hanno completamente cambiato gli scenari di business, con milioni di nuove app sviluppate ogni giorno.
-            Perché creiamo appp mobile e perché dovresti averne una?
+            Perché creiamo app mobile e perché dovresti averne una?
           </p>
           <ul class="mb-4">
             <li class="text--secondary">
@@ -49,7 +49,7 @@
               loro dispositivi per acquistare bene e servizi
             </li>
             <li class="text--secondary">
-              il <b>73% degli imprenditori utilizza app giornalmente</b> per conivolgere i propri clienti
+              il <b>73% degli imprenditori utilizza app giornalmente</b> per coinvolgere i propri clienti
               e acquisirne di nuovi.
             </li>
           </ul>
@@ -68,18 +68,23 @@
         <v-sheet color="transparent" class="pa-5">
           <h5 class="text-h6">Pubblicazione su Google Play e Apple Store</h5>
           <p class="text--secondary">
-            Ci occuperemo noi delle attività necessarie per la pubblicazione del tuo progetto. Gestiamo la pubblicazione della tua App direttamente sui market place di Google ed Apple, sia per App gratuite che a pagamento. Per le App Aziendali sviluppiamo applicativi ad hoc, con distribuzione enterprise, gestendo la distribuzione aziendale di app ai dipendenti attraverso Mobile Device Management
+            Ci occuperemo noi delle attività necessarie per la pubblicazione del tuo progetto. Gestiamo la pubblicazione della tua App direttamente sui marketplace di Google ed Apple, sia per App gratuite che a pagamento. Per le App Aziendali sviluppiamo applicativi ad hoc, con distribuzione enterprise, gestendo la distribuzione aziendale di app ai dipendenti attraverso Mobile Device Management
           </p>
         </v-sheet>
       </v-col>
+    </v-row>
+    <v-row>
+      <cta-contact-us />
     </v-row>
   </div>
 </template>
 
 <script>
 import ServiceImageHero from '~/components/ServiceImageHero.vue'
+import CTAContactUs from '~/components/CTAContactUs.vue'
 export default {
-  components: { ServiceImageHero },
+  transition: 'intro',
+  components: { ServiceImageHero, 'cta-contact-us': CTAContactUs },
   data () {
     return {
       title: 'App Mobile',
