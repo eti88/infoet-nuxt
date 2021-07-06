@@ -1,6 +1,8 @@
 version: 2
 jobs:
   build:
+    machine:
+      enabled: true
     working_directory: ~/repo
     docker:
       - image: circleci/node:12
@@ -24,13 +26,6 @@ jobs:
       - run:
           name: Build-static-site
           command: yarn generate
-
-  deploy:
-    machine:
-      enabled: true
-    working_directory: ~/repo
-    steps:
-      - checkout
       - run: 
           name: Deploy to shared server
           command: |
@@ -39,18 +34,11 @@ jobs:
             echo "Deploying project ..."
             git ftp push --insecure --user "${FTP_USERNAME}" --passwd "${FTP_PASSWORD}" "${FTP_HOST}" --all --syncroot ./dist
 
-
 workflows:
   version: 2
   build_and_deploy:
     jobs:
       - build:
-          filters:
-            branches:
-              only: main
-      - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: main
