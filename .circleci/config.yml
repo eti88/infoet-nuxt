@@ -22,9 +22,6 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: Test
-          command: yarn test --passWithNoTests
-      - run:
           name: Build-static-site
           command: yarn generate
 
