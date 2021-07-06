@@ -48,6 +48,7 @@ jobs:
             sudo apt-get update
             sudo apt-get -qq install git-ftp
             echo "Deploying project ..."
+            git ftp init
             git ftp push --insecure --user "${FTP_USERNAME}" --passwd "${FTP_PASSWORD}" "${FTP_HOST}" --all --syncroot ./dist
 
 
