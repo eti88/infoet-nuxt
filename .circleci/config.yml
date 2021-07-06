@@ -1,8 +1,6 @@
 version: 2
 jobs:
   build:
-    machine:
-      enabled: true
     working_directory: ~/repo
     docker:
       - image: circleci/node:12
