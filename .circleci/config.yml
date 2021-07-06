@@ -1,0 +1,54 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/repo
+    docker:
+      - image: circleci/node:10.16.3
+        auth:
+            username: infoet
+            password: $DOCKERHUB_PASSWORD
+    steps:
+      - checkout
+      - restore_cache:
+          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+      - run:
+          name: Build
+          command: yarn build
+      - save_cache:
+          key: yarn-{{ .Branch }}-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run:
+          name: Test
+          command: yarn test --passWithNoTests
+      - run:
+          name: Build-static-site
+          command: yarn generate
+
+    deploy:
+      machine:
+        enabled: true
+      working_directory: ~/repo
+      steps:
+        - run: Deploy to shared server
+          command: |
+            sudo apt-get update
+            sudo apt-get -qq install git-ftp
+            echo "Deploying project ..."
+            git ftp push --insecure --user "${FTP_USERNAME}" --passwd "${FTP_PASSWORD}" "${FTP_HOST}" --all --syncroot ./dist
+
+
+workflows:
+  version: 2
+  build_and_deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: main
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: main
