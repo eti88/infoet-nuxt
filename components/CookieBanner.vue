@@ -9,51 +9,63 @@
       <v-alert
         border="left"
         rounded
-        prominent
       >
         <v-row align="center">
-            <v-col cols="12" md="3" lg="2" class="shrink">
-              <div>
-                <v-img
-                  src="/cookie.svg"
-                  alt="cookie"
-                  height="100px"
-                  contain
-                />
-              </div>
-            </v-col>
-            <v-col cols="12" md="6" lg="7" class="grow">
+          <v-col cols="12" md="3" lg="2" class="shrink">
+            <div>
+              <v-img
+                src="/cookie.svg"
+                alt="cookie"
+                height="100px"
+                contain
+              >
+                <template #placeholder>
+                  <v-row
+                    class="fill-height ma-0"
+                    align="center"
+                    justify="center"
+                  >
+                    <v-progress-circular
+                      indeterminate
+                      color="grey lighten-5"
+                    />
+                  </v-row>
+                </template>
+              </v-img>
+            </div>
+          </v-col>
+          <v-col cols="12" md="6" lg="7" class="grow">
             <h3 class="text-center text-h6 mb-3">
-                Cookie
+              Cookie
             </h3>
             <p class="text-caption px-4 px-sm-3 px-md-1 px-lg-1">
-                Utilizziamo i cookie per personalizzare i contenuti e gli annunci, fornire le
-                funzioni dei social media e analizzare il nostro traffico. Inoltre forniamo
-                informazioni sul modo in cui utilizzi il nostro sito ai nostri partner che si
-                occupano di analisi dei dati web, pubblicità e social media, i quali potrebbero
-                combinarle con altre informazioni che hai fornito loro o che hanno raccolto in
-                base al tuo utilizzo dei loro servizi.
-                <nuxt-link to="/privacy">
+              Utilizziamo i cookie per personalizzare i contenuti e gli annunci, fornire le
+              funzioni dei social media e analizzare il nostro traffico. Inoltre forniamo
+              informazioni sul modo in cui utilizzi il nostro sito ai nostri partner che si
+              occupano di analisi dei dati web, pubblicità e social media, i quali potrebbero
+              combinarle con altre informazioni che hai fornito loro o che hanno raccolto in
+              base al tuo utilizzo dei loro servizi.
+              <nuxt-link to="/privacy">
                 Privacy policy
-                </nuxt-link>
+              </nuxt-link>
             </p>
-            </v-col>
-            <v-col cols="12" md="3" lg="3" class="shrink">
+          </v-col>
+          <v-col cols="12" md="3" lg="3" class="shrink">
             <v-btn
-                class="py-2 px-4 mb-2"
-                block
-                @click="accept"
+              class="py-2 px-4 mb-2"
+              block
+              @click="accept"
             >
-                Accetta
+              Accetta
             </v-btn>
             <v-btn
-                class="py-2 px-4"
-                block
-                @click="deny"
+              class="py-2 px-4"
+              block
+              @click="deny"
             >
-                Rifiuta
+              Rifiuta
             </v-btn>
-            </v-col>
+          </v-col>
         </v-row>
       </v-alert>
     </v-snackbar>

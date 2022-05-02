@@ -2,7 +2,7 @@
   <v-app class="page-background" dark>
     <v-container>
       <v-row justify="center">
-        <v-col cols="12" md="11" lg="10">
+        <v-col cols="12">
           <navbar class="mt-5" />
         </v-col>
       </v-row>

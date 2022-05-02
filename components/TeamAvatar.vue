@@ -1,17 +1,34 @@
 <template>
   <div class="d-flex flex-column justify-center align-center">
-    <h6 class="text-h6">{{ name }}</h6>
+    <h6 class="text-h6">
+      {{ name }}
+    </h6>
     <v-avatar size="140" class="my-4">
       <v-img
         :src="img"
         :alt="name"
-      />
+        gradient="to bottom right, rgba(100,115,201,.13), rgba(25,32,72,.7)"
+        class="grayscale"
+      >
+        <template #placeholder>
+          <v-row
+            class="fill-height ma-0"
+            align="center"
+            justify="center"
+          >
+            <v-progress-circular
+              indeterminate
+              color="grey lighten-5"
+            />
+          </v-row>
+        </template>
+      </v-img>
     </v-avatar>
     <p class="text-body-1 font-weight-light max-w-220">
       {{ description }}
     </p>
     <div v-if="getAge > 0" class="mt-n4 text-body-2 font-weight-light text-center max-w-220">
-     Età {{ getAge }}
+      Età {{ getAge }}
     </div>
   </div>
 </template>
@@ -64,4 +81,6 @@ export default {
 .max-w-220
   max-width: 220px
   text-align: center
+.grayscale
+  filter: grayscale(1)
 </style>

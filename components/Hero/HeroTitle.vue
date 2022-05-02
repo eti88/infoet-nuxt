@@ -1,6 +1,8 @@
 <template>
   <div class="hero-title-container">
-    <h2 class="text-uppercase font-weight-black text-h5 text-sm-h4 text-md-h3">{{ text }}</h2>
+    <h2 class="text-uppercase font-weight-black text-h5 text-sm-h4 text-md-h3">
+      {{ text }}
+    </h2>
   </div>
 </template>
 

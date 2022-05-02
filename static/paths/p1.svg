@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="211px" height="171px" viewBox="0 0 211 171" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Path Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="77.6423415%" y1="20.237032%" x2="-12.2274943%" y2="68.5244635%" id="linearGradient-1">
+            <stop stop-color="#FF6FB7" offset="0%"></stop>
+            <stop stop-color="#FFF569" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.56156994">
+        <g id="Artboard" transform="translate(-62.000000, -150.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group" transform="translate(327.413767, 329.784704) rotate(-15.000000) translate(-327.413767, -329.784704) translate(-170.586233, -167.215296)">
+                <g id="6" transform="translate(262.000000, 259.000000)">
+                    <g id="Path">
+                        <path d="M182.388996,18.3043893 C226.46442,80.6846713 200.732048,124.479215 105.191881,149.68802 C9.65171322,174.896825 -27.4031224,207.163493 -5.97262636,246.488025 L-5.97262636,18.3043893 L182.388996,18.3043893 Z" id="Path-Copy" transform="translate(95.699103, 132.396207) rotate(15.000000) translate(-95.699103, -132.396207) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

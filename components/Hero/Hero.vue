@@ -2,7 +2,7 @@
   <div>
     <v-row align="center">
       <v-col cols="12" sm="7">
-        <v-sheet ref="heroCard" id="hero-card" class="pa-10 glass-container">
+        <v-sheet id="hero-card" ref="heroCard" class="pa-10 glass-container">
           <hero-title class="hero-title" text="C'è sempre una maniera migliore per lavorare" />
           <p class="mt-5 mb-5">
             Creiamo portali web, app per smartphone, software per desktop e server che possono
@@ -35,7 +35,7 @@
         sm="5"
         :class="$vuetify.breakpoint.xsOnly ? 'mt-n32' : ''"
       >
-        <img class="hero-img" src="/hero-img.svg" />
+        <img class="hero-img" src="/hero-img.svg">
       </v-col>
     </v-row>
   </div>

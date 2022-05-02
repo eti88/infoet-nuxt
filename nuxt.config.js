@@ -1,5 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
-import { dynamicRoutes } from './helpers/dynamic-routes.js'
+// import { dynamicRoutes } from './helpers/dynamic-routes.js'
+import { projects } from './helpers/portfolio-items.js'
 
 export default {
   ssr: false,
@@ -84,7 +85,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -122,11 +124,22 @@ export default {
   },
 
   generate: {
-    routes: dynamicRoutes
+    crawler: true,
+    // routes: dynamicRoutes
+    routes () {
+      return projects.map((item) => {
+        return {
+          route: `/progetti/${item.slug}`,
+          payload: item   
+        }
+      })
+    }
   },
 
   robots: {
-    UserAgent: '*'
+    UserAgent: '*',
+    Disallow: "",
+    Sitemap: 'https://infoet.it/sitemap.xml'
   },
 
   'rfg-icon': {
@@ -137,7 +150,8 @@ export default {
 
   sitemap: {
     hostname: 'https://infoet.it',
-    gzip: true,
+    // gzip: true,
+    path: '/sitemap.xml',
     routes: [
       '/',
       '/servizi',
@@ -172,5 +186,18 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend (config, { isClient }) {
+      // Extend only webpack config for client-bundle
+      if (isClient) {
+        config.devtool = 'source-map'
+      }
+    },
+    extend(config, context) {
+      if (context.isServer) {
+        projects.forEach((item) => {
+          this.buildContext.options.generate.routes.push(`/progetti/${item.slug}`)
+        })
+      }
+    }
   }
 }

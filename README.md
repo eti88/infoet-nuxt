@@ -1,5 +1,12 @@
 # infoet
 
+#TODO:
+Missing h1 from homepage
+
+Twitter card incomplete
+Open Graph tasg incomplete
+Canonical tags are missing on certain pages.
+
 # Colors
 Curious Blue: #1690D3
 Bleached Cedar: #241C2C

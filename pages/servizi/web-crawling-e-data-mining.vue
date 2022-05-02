@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h1 class="mt-10 text-h4">{{ title }}</h1>
+          <h1 class="mt-10 text-h4">
+            {{ title }}
+          </h1>
         </v-col>
       </v-col>
     </v-row>
@@ -34,7 +36,7 @@
             I nostri bot possono estrarre dati da qualsiasi tipo di sito web indipendentemente
             dalla tecnologia utilizzata (PHP, ASP, AJAX, Javascript, ecc.), inoltre sono in grado
             di replicare tutti i tipi di integrazioni come login, navigazione, compilazione di form, ecc.
-            <br />
+            <br>
             I dati estratti automaticamente possono essere salvati su semplici file Excel o inseriti in Database,
             inoltre è possibile realizzare delle interfacce specifiche per la consultazione rapida dei dati
             storicizzati.
@@ -49,7 +51,9 @@
     <v-row>
       <v-col cols="12">
         <v-sheet color="transparent" class="pa-5">
-          <h5 class="text-h6">Opzione chiavi in mano</h5>
+          <h5 class="text-h6">
+            Opzione chiavi in mano
+          </h5>
           <p class="text--secondary mb-5">
             Se non sei dotato di un'infrastruttura idonea per il servizio
             possiamo eseguirlo sulal nostra infrastruttura informatica.
@@ -94,8 +98,8 @@
 import ServiceImageHero from '~/components/ServiceImageHero.vue'
 import CTAContactUs from '~/components/CTAContactUs.vue'
 export default {
-  transition: 'intro',
   components: { ServiceImageHero, 'cta-contact-us': CTAContactUs },
+  transition: 'intro',
   data () {
     return {
       title: 'Web crawling e Data Mining',

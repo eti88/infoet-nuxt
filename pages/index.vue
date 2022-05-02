@@ -12,7 +12,9 @@
     <v-row justify="center" align="center">
       <v-col cols="12">
         <v-sheet class="glass-container pa-8">
-          <h2 class="mb-5 text-h4">Cosa facciamo</h2>
+          <h2 class="mb-5 text-h4">
+            Cosa facciamo
+          </h2>
           <p>
             I nostri servizi sono rivolti ad aziende, uffici e professionisti che hanno bisogno
             di software personalizzati e utilizzabili per svolgere al meglio il proprio lavoro e/o per ottimizzare i tempi
@@ -25,7 +27,9 @@
     </v-row>
     <v-row align="center">
       <v-col cols="12" sm="8">
-        <h3 class="mt-10 mb-5 text-h4">I nostri servizi</h3>
+        <h3 class="mt-10 mb-5 text-h4">
+          I nostri servizi
+        </h3>
         <p class="text--secondary">
           Forniamo un'ampia gamma di servizi professionali nell'ambito dei software. Il nostro team è in grado di poter affrontare qualsiasi progetto IT.
         </p>
@@ -38,7 +42,9 @@
     </v-row>
     <v-row align="center">
       <v-col cols="12" sm="8">
-        <h3 class="mt-10 mb-5 text-h4">Alcuni dei nostri lavori</h3>
+        <h3 class="mt-10 mb-5 text-h4">
+          Alcuni dei nostri lavori
+        </h3>
         <p class="text--secondary">
           Negli anni abbiamo sviluppato una gamma di progetti molto ampia e variegata. I nostri servizi di <b>sviluppo software</b> e <b>IT consulting</b> all'attivo
           sono stati realizzati in contesti multisettoriali. Qui puoi trvarne alcuni.
@@ -71,8 +77,8 @@ import PortfolioSlider from '~/components/PortfolioSlider.vue'
 import ServiceSlider from '~/components/ServiceSlider.vue'
 import TechShowcase from '~/components/TechShowcase.vue'
 export default {
-  transition: 'intro',
   components: { 'e-hero': Hero, TechShowcase, ServiceSlider, PortfolioSlider },
+  transition: 'intro',
   data () {
     return {
       showcaseElements: [

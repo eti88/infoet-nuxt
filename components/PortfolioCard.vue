@@ -1,14 +1,30 @@
 <template>
   <v-card
     class="mx-auto mb-12 service-card"
+    max-width="375"
   >
     <v-img
       :src="image"
-      height="150"
-    ></v-img>
+      height="230"
+    >
+      <template #placeholder>
+        <v-row
+          class="fill-height ma-0"
+          align="center"
+          justify="center"
+        >
+          <v-progress-circular
+            indeterminate
+            color="grey lighten-5"
+          />
+        </v-row>
+      </template>
+    </v-img>
 
     <v-card-title class="px-5 px-md-8" primary-title>
-      <h3 class="text-h6 mb-0">{{ title }}</h3>
+      <h3 class="text-h6 mb-0">
+        {{ title }}
+      </h3>
     </v-card-title>
     <v-chip-group class="mx-5 mx-md-8" show-arrows>
       <v-chip
@@ -18,12 +34,15 @@
         text-color="#fff"
         ripple
         pill
+        small
       >
         {{ tag }}
       </v-chip>
     </v-chip-group>
     <v-card-text class="desc-wrapper px-5 px-md-8">
-      <p class="text-desc">{{ climpedDescription }}</p>
+      <p class="text-desc">
+        {{ climpedDescription }}
+      </p>
     </v-card-text>
 
     <v-btn

@@ -5,7 +5,9 @@
     </div>
     <v-row justify="center" align="center">
       <v-col cols="12">
-        <h3 class="mt-10 text-h4">Privacy Policy Sito Web Infoet</h3>
+        <h3 class="mt-10 text-h4">
+          Privacy Policy Sito Web Infoet
+        </h3>
       </v-col>
     </v-row>
     <v-row justify="center" align="center">
@@ -16,7 +18,7 @@
           Infoet e usufruiscono dei relativi servizi web a partire dall’indirizzo www.infoet.it
         </p>
         <p>
-          L’informativa è resa soltanto per i siti sopra menzionati e non anche per altri siti web eventualmente consultati dall’utente tramite appositi link.<br />
+          L’informativa è resa soltanto per i siti sopra menzionati e non anche per altri siti web eventualmente consultati dall’utente tramite appositi link.<br>
           Il sito www.infoet.it è di proprietà di Infoet, gestito da Etienne Tomaselli.
         </p>
         <p>
@@ -74,9 +76,9 @@
         <p>
           I trattamenti connessi ai servizi web dei siti sopra indicati, hanno luogo presso la sede aziendale della Infoet, in Via XX Settembre – 38051 Borgo Valsugana del Titolare del trattamento e/o presso la sede della società di hosting e/o gestione del sito web e sono curati solo da personale tecnico dell’Ufficio incaricato del trattamento,
 
-oppure da eventuali incaricati di occasionali operazioni di manutenzione.
-Nessun dato derivante dal servizio web viene comunicato o diffuso.
-I dati personali forniti dagli utenti che inoltrano richieste di invio di materiale informativo sono utilizzati al solo fine di eseguire il servizio o la prestazione richiesta e sono comunicati a terzi nel solo caso in cui ciò sia a tal fine necessario.
+          oppure da eventuali incaricati di occasionali operazioni di manutenzione.
+          Nessun dato derivante dal servizio web viene comunicato o diffuso.
+          I dati personali forniti dagli utenti che inoltrano richieste di invio di materiale informativo sono utilizzati al solo fine di eseguire il servizio o la prestazione richiesta e sono comunicati a terzi nel solo caso in cui ciò sia a tal fine necessario.
         </p>
         <h4>Titolare del trattamento</h4>
         <p>
@@ -88,19 +90,19 @@ I dati personali forniti dagli utenti che inoltrano richieste di invio di materi
         </p>
         <p>
           Ai sensi del medesimo articolo si ha il diritto di chiedere la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, nonché di opporsi in ogni caso, per motivi legittimi, al loro trattamento.
-Le richieste vanno inoltrate al Titolare del trattamento ai recapiti indicati sopra.
+          Le richieste vanno inoltrate al Titolare del trattamento ai recapiti indicati sopra.
         </p>
         <p>
           è possibile richiedere la cancellazione dei dati anche attraverso un messaggio di posta certificata al seguente indirizzo
           <a
-            href="#"
             ref="requestEmail"
+            href="#"
             class="encryptedmail"
             data-name="etienne.tomaselli"
             data-domain="postacert"
             data-tld="eu"
             @click="getEmail"
-          ></a>
+          />
         </p>
       </v-col>
     </v-row>

@@ -44,7 +44,7 @@
           </a>
         </td>
       </tr>
-      <tr >
+      <tr>
         <td class="pa-3">
           Cookie permanente
         </td>
@@ -56,7 +56,7 @@
           N/A
         </td>
       </tr>
-      <tr >
+      <tr>
         <td colspan="2" class="pa-3">
           Cookie analitici
         </td>
@@ -68,7 +68,7 @@
           dominio o da domini di terze parti.
         </td>
       </tr>
-      <tr >
+      <tr>
         <th class="grey--text text--lighten-1">
           Servizio
         </th>
@@ -82,7 +82,7 @@
           Link
         </th>
       </tr>
-      <tr >
+      <tr>
         <td class="pa-3">
           Google Analytics
         </td>
@@ -99,7 +99,7 @@
           <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage">https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a>
         </td>
       </tr>
-      <tr >
+      <tr>
         <th colspan="2" class="grey--text text--lighten-1">
           Tipo di cookie
         </th>
@@ -107,7 +107,7 @@
           Finalità
         </th>
       </tr>
-      <tr >
+      <tr>
         <td colspan="2" class="pa-3">
           Tipo di cookie
         </td>
@@ -115,7 +115,7 @@
           Finalità
         </td>
       </tr>
-      <tr >
+      <tr>
         <td colspan="2" class="pa-3">
           Cookie per l’integrazione di funzionalità di terze parti
         </td>
@@ -125,7 +125,7 @@
           parti).
         </td>
       </tr>
-      <tr >
+      <tr>
         <th class="grey--text text--lighten-1">
           Servizio
         </th>
@@ -139,7 +139,7 @@
           Link
         </th>
       </tr>
-      <tr >
+      <tr>
         <td class="pa-3">
           Google Maps
         </td>
@@ -155,7 +155,7 @@
           <a href="http://www.google.it/intl/it/policies/technologies/managing/" class="text-truncate">http://www.google.it/intl/it/policies/technologies/managing/</a><br>
         </td>
       </tr>
-      <tr >
+      <tr>
         <td class="pa-3">
           Facebook
         </td>
@@ -172,7 +172,7 @@
           Sezione privacy
         </td>
       </tr>
-      <tr >
+      <tr>
         <td colspan="2" class="pa-3">
           Tipo di cookie
         </td>
@@ -180,7 +180,7 @@
           Finalità
         </td>
       </tr>
-      <tr >
+      <tr>
         <td colspan="2" class="pa-3 text-truncate">
           Cookie di profilazione di terze parti
         </td>

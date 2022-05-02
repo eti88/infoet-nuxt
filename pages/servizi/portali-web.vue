@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h1 class="mt-10 text-h4">{{ title }}</h1>
+          <h1 class="mt-10 text-h4">
+            {{ title }}
+          </h1>
         </v-col>
       </v-col>
     </v-row>
@@ -13,7 +15,7 @@
           <p class="text--secondary">
             Sviluppiamo <b>portali</b> e <b>web application</b> finalizzate all'implementazione
             di logiche di business utili all'azienda per migliorare <b>l'efficacia dei processi e la
-            collaborazione all'interno dei team di lavoro</b>.<br />
+              collaborazione all'interno dei team di lavoro</b>.<br>
             L'espressione "web application" viene impiegata per indicare tutte le applicazioni
             distribuite tramite pagine web, cioè applicativi fruibili direttamente sul web attraverso
             l'uso di un semplice browser.
@@ -34,7 +36,7 @@
             La necessità di sviluppare una web application generalmente nasce dall'esigenza di
             implementare via web una logica di business già operativa nell'azienda tramite strumenti
             tradizionali oppure di nuova ideazione per conseguire un <b>obiettivo di miglioramento strategico</b>.
-            <br />
+            <br>
             Proprio perché progettate per l’utilizzo sia esterno che interno all’azienda, le web application spesso
             oltre a implementare una funzionalità specifica devono rispecchiare tutta o parte l’organizzazione aziendale,
             soprattutto in termini di ruoli, gruppi e comparti.
@@ -85,8 +87,8 @@
 import ServiceImageHero from '~/components/ServiceImageHero.vue'
 import CTAContactUs from '~/components/CTAContactUs.vue'
 export default {
-  transition: 'intro',
   components: { ServiceImageHero, 'cta-contact-us': CTAContactUs },
+  transition: 'intro',
   data () {
     return {
       title: 'Portali Web & Web App',

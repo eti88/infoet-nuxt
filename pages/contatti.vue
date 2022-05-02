@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h3 class="mt-10 text-h4">Contatti</h3>
+          <h3 class="mt-10 text-h4">
+            Contatti
+          </h3>
         </v-col>
       </v-col>
     </v-row>
@@ -11,33 +13,42 @@
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
           <div>
-            <h4 class="text-h5">Infoet di Etienne Tomaselli</h4>
-            <h5 class="text-h6">Sede legale</h5>
+            <h4 class="text-h5">
+              Infoet di Etienne Tomaselli
+            </h4>
+            <h5 class="text-h6">
+              Sede legale
+            </h5>
             <p class="text--secondary text-body-1">
               Via XX Settembre 82 - Borgo Valsugana - 38051 - TN
             </p>
           </div>
           <div>
-            <h5 class="text-h6">Email</h5>
+            <h5 class="text-h6">
+              Email
+            </h5>
             <a
-              href="#"
               ref="footerEmail"
+              href="#"
               class="encryptedmail text--secondary text-body-1"
               data-name="info"
               data-domain="infoet"
               data-tld="it"
               @click="getEmail"
-            >
-            </a>
+            />
           </div>
           <div class="mt-5">
-            <h5 class="text-h6">Telefono</h5>
+            <h5 class="text-h6">
+              Telefono
+            </h5>
             <p class="text--secondary text-body-1">
               +39 3463770323
             </p>
           </div>
           <div class="mt-5">
-            <h5 class="text-h6">Social</h5>
+            <h5 class="text-h6">
+              Social
+            </h5>
             <v-btn href="https://www.facebook.com/infoet.tn" icon text>
               <v-icon x-large>
                 mdi-facebook
@@ -47,7 +58,7 @@
         </v-sheet>
       </v-col>
       <v-col cols="12" sm="5">
-        <img class="hero-img mt-1" src="/contatti.svg" />
+        <img class="hero-img mt-1" src="/contatti.svg">
       </v-col>
     </v-row>
   </div>

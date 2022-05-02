@@ -9,9 +9,9 @@
           md="4"
           lg="4"
         >
-          <img height="60" src="/logo2.svg" alt="infoet" />
+          <img height="60" src="/logo2.svg" alt="infoet">
         </v-col>
-        <v-spacer></v-spacer>
+        <v-spacer />
       </v-row>
       <v-row align="start">
         <v-col
@@ -61,17 +61,17 @@
             </dt>
             <dt>Borgo Valsugana 38051 (TN)</dt>
             <dt>Tel. +39 346 3770323</dt>
-            <dt>Email.
+            <dt>
+              Email.
               <a
-                href="#"
                 ref="footerEmail"
+                href="#"
                 class="encryptedmail"
                 data-name="info"
                 data-domain="infoet"
                 data-tld="it"
                 @click="getEmail"
-              >
-              </a>
+              />
             </dt>
           </dl>
         </v-col>

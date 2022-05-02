@@ -5,7 +5,9 @@
     </div>
     <v-row justify="center" align="center">
       <v-col cols="12">
-        <h3 class="mt-10 text-h4">Cookie Policy</h3>
+        <h3 class="mt-10 text-h4">
+          Cookie Policy
+        </h3>
       </v-col>
     </v-row>
     <v-row justify="center" align="center">
@@ -126,8 +128,8 @@
 <script>
 import CookieTableTypes from '~/components/CookieTableTypes.vue'
 export default {
-  transition: 'intro',
-  components: { CookieTableTypes }
+  components: { CookieTableTypes },
+  transition: 'intro'
 }
 </script>
 

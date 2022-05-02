@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h1 class="mt-10 text-h4">{{ title }}</h1>
+          <h1 class="mt-10 text-h4">
+            {{ title }}
+          </h1>
         </v-col>
       </v-col>
     </v-row>
@@ -29,7 +31,9 @@
     <v-row>
       <v-col cols="12" md="10">
         <v-sheet color="transparent" class="pa-5">
-          <h5 class="text-h6">Il cambiamento del mercato</h5>
+          <h5 class="text-h6">
+            Il cambiamento del mercato
+          </h5>
           <p class="text--secondary">
             Le App hanno completamente cambiato gli scenari di business, con milioni di nuove app sviluppate ogni giorno.
             Perché creiamo app mobile e perché dovresti averne una?
@@ -66,7 +70,9 @@
     <v-row>
       <v-col cols="12">
         <v-sheet color="transparent" class="pa-5">
-          <h5 class="text-h6">Pubblicazione su Google Play e Apple Store</h5>
+          <h5 class="text-h6">
+            Pubblicazione su Google Play e Apple Store
+          </h5>
           <p class="text--secondary">
             Ci occuperemo noi delle attività necessarie per la pubblicazione del tuo progetto. Gestiamo la pubblicazione della tua App direttamente sui marketplace di Google ed Apple, sia per App gratuite che a pagamento. Per le App Aziendali sviluppiamo applicativi ad hoc, con distribuzione enterprise, gestendo la distribuzione aziendale di app ai dipendenti attraverso Mobile Device Management
           </p>
@@ -83,8 +89,8 @@
 import ServiceImageHero from '~/components/ServiceImageHero.vue'
 import CTAContactUs from '~/components/CTAContactUs.vue'
 export default {
-  transition: 'intro',
   components: { ServiceImageHero, 'cta-contact-us': CTAContactUs },
+  transition: 'intro',
   data () {
     return {
       title: 'App Mobile',

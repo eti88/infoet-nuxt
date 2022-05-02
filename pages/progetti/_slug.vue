@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h1 class="mt-10 text-h4">{{ filteredProject.title }} - {{ filteredProject.year }}</h1>
+          <h1 class="mt-10 text-h4">
+            {{ filteredProject.title }} - {{ filteredProject.year }}
+          </h1>
         </v-col>
       </v-col>
     </v-row>
@@ -67,14 +69,18 @@ import ServiceImageHero from '~/components/ServiceImageHero.vue'
 import { projects } from '~/helpers/portfolio-items.js'
 
 export default {
-  transition: 'intro',
   components: { ServiceImageHero },
-  asyncData ({ params, redirect }) {
-    const filteredProject = projects.find(el => el.slug === params.slug)
-    if (filteredProject) {
-      return { filteredProject }
+  transition: 'intro',
+  asyncData ({ params, error, payload }) {
+    if (payload) {
+      return { filteredProject: payload }
     } else {
-      redirect('/')
+      const filteredProject = projects.find(el => el.slug === params.slug)
+      if (filteredProject) {
+        return { filteredProject }
+      } else {
+        redirect('/')
+      }
     }
   },
   head () {

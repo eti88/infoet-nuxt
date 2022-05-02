@@ -5,10 +5,10 @@
     flat
   >
     <v-toolbar-title @click="$route.path !== '/' ? $router.replace('/') : false">
-      <img src="/logo.svg" height="30" alt="Infoet" />
+      <img src="/logo.svg" height="30" alt="Infoet">
     </v-toolbar-title>
 
-    <v-spacer></v-spacer>
+    <v-spacer />
     <v-flex
       v-if="$vuetify.breakpoint.mdAndUp"
       shrink
@@ -35,7 +35,7 @@
       offset-y
       eager
     >
-      <template v-slot:activator="{ on, attrs }">
+      <template #activator="{ on, attrs }">
         <v-app-bar-nav-icon v-bind="attrs" v-on="on" />
       </template>
       <v-list>

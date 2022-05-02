@@ -1,13 +1,15 @@
 <template>
   <section class="tech-container w-full">
     <div v-if="title !== null">
-      <h3 class="text-center mb-10 text-h5">{{ title }}</h3>
+      <h3 class="text-center mb-10 text-h5">
+        {{ title }}
+      </h3>
     </div>
     <div class="d-inline-flex flex-wrap align-center justify-space-around w-full">
       <template v-for="(item, k) in items">
         <div :key="k" class="showcase-item d-flex flex-column align-center justify-center my-5">
           <a :href="item.href">
-            <img :src="item.img" />
+            <img :src="item.img">
           </a>
           <div
             v-if="item.title !== null"

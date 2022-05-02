@@ -3,7 +3,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h1 class="mt-10 text-h4">{{ title }}</h1>
+          <h1 class="mt-10 text-h4">
+            {{ title }}
+          </h1>
         </v-col>
       </v-col>
     </v-row>
@@ -35,8 +37,8 @@
 import ServiceImageHero from '~/components/ServiceImageHero.vue'
 import CTAContactUs from '~/components/CTAContactUs.vue'
 export default {
-  transition: 'intro',
   components: { ServiceImageHero, 'cta-contact-us': CTAContactUs },
+  transition: 'intro',
   data () {
     return {
       title: 'Assistenza PC e Software aziendali'

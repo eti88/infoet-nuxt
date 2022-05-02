@@ -6,7 +6,9 @@
     <v-row>
       <v-col cols="12">
         <v-col cols="12">
-          <h3 class="mt-10 text-h4">Chi siamo</h3>
+          <h3 class="mt-10 text-h4">
+            Chi siamo
+          </h3>
         </v-col>
       </v-col>
     </v-row>
@@ -19,10 +21,10 @@
           </p>
           <p class="text--secondary">
             La storia della Info<b>et</b> inizia nel 2018 quando il titolare
-            Etienne, appassionato di software e tecnologie informatiche fonda l'azienda.<br />
+            Etienne, appassionato di software e tecnologie informatiche fonda l'azienda.<br>
             Negli anni l'azienda ha superato innumerevoli sfide, sviluppando un
             know-how che ci permette di realizzare qualsiasi tipo di applicazione, su
-            ogni tipo di piattaforma e dispositivo.<br />
+            ogni tipo di piattaforma e dispositivo.<br>
             In un mercato che offre molte soluzioni pre-made e personalizzabili, la info<b>et</b>
             si distingue sviluppando prodotti personalizzati di elevata qualità e usabilità nonchè
             per il supporto tecnico e passione costante nel tempo.
@@ -30,7 +32,7 @@
         </v-sheet>
       </v-col>
       <v-col cols="12" sm="5">
-        <img class="hero-img" src="/chi-siamo.svg" />
+        <img class="hero-img" src="/chi-siamo.svg">
       </v-col>
     </v-row>
     <v-row justify="space-around" class="mb-10">
@@ -51,11 +53,11 @@
             :color="item.color"
             small
           >
-            <template v-slot:opposite>
+            <template #opposite>
               <span
                 :class="`headline font-weight-bold ${item.color}--text`"
                 v-text="item.year"
-              ></span>
+              />
             </template>
             <div class="py-4">
               <h5 :class="`text-body-1 font-weight-light mb-4 ${item.color}--text`">
@@ -73,11 +75,11 @@
           <p class="text--secondary">
             Le nostre soluzioni software sono frutto di una costante ricerca
             e studio da parte del nostro team in modo da potervi offrire sempre
-            prodotti moderni e stabili.<br />
+            prodotti moderni e stabili.<br>
             La programmazione è svolta con le tecniche OOP (Object Oriented Programming)
             per assicurare le migliori prestazioni e continuità del codice nel tempo.
             Applichiamo la metodologia <a href="https://it.wikipedia.org/wiki/Rapid_application_development">RAD</a>
-            per la riduzione dei tempi di sviluppo.<br />
+            per la riduzione dei tempi di sviluppo.<br>
             Utilizziamo tecnologie <b>Open Source</b> per i nostri prodotti in modo da consegnare
             prodotti ad alto valore aggiunto (<i>rispetto degli standard, sicurezza, qualità e longevità</i>)
             con investimenti contenuti.
@@ -90,42 +92,12 @@
         </v-sheet>
       </v-col>
     </v-row>
-    <v-row justify="start" align="start" class="my-12">
-      <v-col cols="12" sm="6">
-        <v-sheet color="transparent" class="pa-5">
-          <h5 class="text-h6">Una costante crescita</h5>
-          <p class="text--secondary">
-            In pochi anni abbiamo un importante percorso di crescita, così come evidenziato dagli eccellenti
-            indicatori finanziari.
-          </p>
-        </v-sheet>
-      </v-col>
-      <v-col cols="12" sm="6">
-        <v-sheet color="transparent">
-          <div class="glass-container pa-4">
-            <v-sparkline
-              :fill="false"
-              :gradient="['#1690D3', '#C6E6F7']"
-              :line-width="2.5"
-              :smooth="10"
-              :value="growthData"
-              :labels="labels"
-              padding="10"
-              height="100"
-              auto-draw
-            >
-            </v-sparkline>
-            <p class="text-center text-caption text--secondary mt-5">
-              + 30% Annuo
-            </p>
-          </div>
-        </v-sheet>
-      </v-col>
-    </v-row>
     <v-row>
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
-          <h5 class="text-h6">La nostra vision</h5>
+          <h5 class="text-h6">
+            La nostra vision
+          </h5>
           <p class="text--secondary">
             Un solido sistema di valori guida il nostro modo di agire
           </p>
@@ -159,13 +131,15 @@
     </v-row>
     <v-row class="my-12">
       <v-sheet color="transparent" class="pa-5">
-        <h5 class="text-h6">La nostra mission</h5>
+        <h5 class="text-h6">
+          La nostra mission
+        </h5>
         <p class="text--secondary">
           Forniamo alle organizzazioni pubbliche private soluzioni digitali in cui
           l'innovazione del prodotto e di processo diventa un investimento ben fatto
           per una solida presenza sul mercato.
           Abbiamo le persone, le competenze, le intuizioni e l'esperienza in più settori,
-          tali da modellare nuove forme di valore per il cliente.<br />
+          tali da modellare nuove forme di valore per il cliente.<br>
           Offriamo punti di vista altamente obiettivi con particolare attenzione al business,
           alla tecnologia e all'analisi, sfruttando la nostra profonda esperienza.
         </p>
@@ -192,24 +166,6 @@ export default {
           year: new Date().getFullYear(),
           color: 'amber'
         }
-      ],
-      growthData: [
-        423,
-        446,
-        675,
-        510,
-        590,
-        610,
-        760
-      ],
-      labels: [
-        '2018',
-        '2018',
-        '2019',
-        '2019',
-        '2020',
-        '2020',
-        '2021'
       ],
       vision: [
         {

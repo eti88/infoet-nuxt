@@ -9,7 +9,7 @@
       gradient="to top right, rgba(100,115,201,.33), rgba(25,32,72,.7)"
       alt="alt"
     >
-      <template v-slot:placeholder>
+      <template #placeholder>
         <v-row
           class="fill-height ma-0"
           align="center"
@@ -18,7 +18,7 @@
           <v-progress-circular
             indeterminate
             color="#1690D3"
-          ></v-progress-circular>
+          />
         </v-row>
       </template>
     </v-img>

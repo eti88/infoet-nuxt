@@ -3,11 +3,13 @@
     <v-row>
       <v-col cols="12" sm="7">
         <v-sheet color="transparent" class="pa-5">
-          <h3 class="mt-10 mb-5 text-h4">Alcuni dei nostri progetti</h3>
+          <h3 class="mt-10 mb-5 text-h4">
+            Alcuni dei nostri progetti
+          </h3>
         </v-sheet>
       </v-col>
       <v-col cols="12" sm="5">
-        <img class="hero-img" src="/servizi.svg" />
+        <img class="hero-img" src="/servizi.svg">
       </v-col>
     </v-row>
     <v-row>
